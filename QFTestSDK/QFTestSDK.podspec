@@ -5,25 +5,20 @@
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
+Pod::Spec.new do |s|
+  s.name             = "QFTestSDK"
+  s.version          = "1.0.2"
+  s.summary          = "A simple iOS framework that prints Hello, World!"
+  s.description      = "A framework to demonstrate usage in another iOS app."
+  s.homepage         = "https://github.com/BstaffanUB/ShareAndCare"
+  s.license          = { :type => "MIT", :file => "License" }
+  s.author           = { "B" => "benstaffan@gmail.com" }
+  s.source           = { :git => "https://github.com/BstaffanUB/ShareAndCare.git", :tag => "1.0.2" }
+  s.platform         = :ios, "10.0"
+  s.swift_version    = "5.0"
 
-Pod::Spec.new do |spec|
-  spec.name         = "QFTestSDK"
-  spec.version      = "1.0.0"
-  spec.summary      = "Testing for education"
-  spec.description  = "Test descrip"
-  spec.homepage     = "https://github.com/BstaffanUB/ShareAndCare"
+  s.source_files     = 'QFTestSDK/**/*.swift'
 
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Ben" => "ben@quickfi.com" }
-  spec.platform     = :ios, "12.0"
-
-  spec.source       = { :git => "https://github.com/BstaffanUB/ShareAndCare.git", :tag => "v#{spec.version}" }
-
-  spec.source_files  = "QFTestSDK/**/*.swift"
-
-  # Add your dependencies here
-  #s.dependency 'Alamofire', '~> 5.5'
-
-  # Additional configuration if needed...
+  # You can add other files, resources, and dependencies as needed.
 
 end
